@@ -1,20 +1,19 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const navItems = {
-  '/': {
-    name: 'home',
+  "/": {
+    name: "home",
   },
-  '/blog': {
-    name: 'blog',
+  "/blog": {
+    name: "blog",
   },
-  '/about': {
-    name: 'about',
+  "/about": {
+    name: "about",
   },
-  '/contact': {
-    name: 'contact',
-  }
-  
-}
+  "/contact": {
+    name: "contact",
+  },
+};
 
 export function Navbar() {
   return (
@@ -34,11 +33,11 @@ export function Navbar() {
                 >
                   {name}
                 </Link>
-              )
+              );
             })}
           </div>
         </nav>
       </div>
     </aside>
-  )
+  );
 }
