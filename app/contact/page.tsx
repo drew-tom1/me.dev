@@ -6,7 +6,8 @@ export const metadata = {
   export default function Page() {
     return (
       <section>
-        <h1 className="font-semibold text-4xl mb-8 tracking-tighter">let's chat!</h1>
+        <h1 className="font-semibold text-4xl mb-6 tracking-tighter">let's chat!</h1>
+        <hr />
       </section>
     )
   }

@@ -3,15 +3,16 @@ import { BlogPosts } from 'app/components/posts'
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-4xl font-semibold tracking-tighter">
+      <h1 className="mb-6 text-4xl font-semibold tracking-tighter">
         hi, i'm drew!
       </h1>
-      <p className="mb-4">
-        {`- I'm a second year at San Jose State University studying cybersecurity and software engineering.`}<br />
-        {`- I'm apart of SJSU's Software and Computer Engineering Society as a Development Team Officer`}<br />
-        {`- I mainly work with TypeScript, SvelteKit, and Python.`}
+      <hr />
+      <p className="my-4">
+        {`I'm a second year at San Jose State University studying cybersecurity and software engineering.
+        I'm apart of some clubs on campus including SJSU's Software and Computer Engineering Society. I love learning about new things.
+        In my freetime, I love playing with my cats, learning about investments, or nerding out over Warhammer 40,000!`}
       </p>
-      <div className="my-8">
+      <div className="my-4">
         <BlogPosts />
       </div>
     </section>
