@@ -48,7 +48,7 @@ export default function Page() {
           <span className="text-white">GitHub</span>
           <HorizontalArrowIcon />
           <a
-            href="https://github.com/your-github-username"
+            href="https://github.com/drew-tom1"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-gray-600"
@@ -60,7 +60,7 @@ export default function Page() {
           <span className="text-white">Email</span>
           <HorizontalArrowIcon />
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:drew.tom@sjsu.edu"
             className="text-white hover:text-gray-600"
           >
             drew.tom@sjsu.edu
