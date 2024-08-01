@@ -33,35 +33,35 @@ export default function Page() {
       <hr />
       <ul className="list-none space-y-4 mt-4">
         <li className="flex items-center">
-          <span className="text-white">LinkedIn</span>
+          <span className="dark:text-white">LinkedIn</span>
           <HorizontalArrowIcon />
           <a
             href="https://www.linkedin.com/in/drew-tom"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-gray-600"
+            className="dark:text-white hover:text-gray-600"
           >
             in/drew-tom
           </a>
         </li>
         <li className="flex items-center">
-          <span className="text-white">GitHub</span>
+          <span className="dark:text-white">GitHub</span>
           <HorizontalArrowIcon />
           <a
             href="https://github.com/drew-tom1"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-gray-600"
+            className="dark:text-white hover:text-gray-600"
           >
             drew-tom1
           </a>
         </li>
         <li className="flex items-center">
-          <span className="text-white">Email</span>
+          <span className="dark:text-white">Email</span>
           <HorizontalArrowIcon />
           <a
             href="mailto:drew.tom@sjsu.edu"
-            className="text-white hover:text-gray-600"
+            className="dark:text-white hover:text-gray-600"
           >
             drew.tom@sjsu.edu
           </a>

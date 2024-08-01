@@ -1,10 +1,19 @@
 import { BlogPosts } from "app/components/posts";
+import { Typewriter } from "nextjs-simple-typewriter";
 
 export default function Page() {
   return (
     <section>
       <h1 className="mb-6 text-4xl font-semibold tracking-tighter">
-        hi, i'm drew!
+        <Typewriter
+          words={["hi, i'm drew!"]}
+          cursor
+          cursorBlinking
+          typeSpeed={150}
+          deleteSpeed={125}
+          delaySpeed={1000}
+          loop={0}
+        />
       </h1>
       <hr />
       <p className="my-4">
