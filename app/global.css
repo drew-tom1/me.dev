@@ -148,3 +148,30 @@ table {
 .title {
   text-wrap: balance;
 }
+
+.border-container {
+  border: 2px solid white;
+  padding: 20px;
+  position: relative;
+}
+
+.border-container::before,
+.border-container::after {
+  content: '';
+  position: absolute;
+  border: 2px solid white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.border-container::before {
+  transform: translate(-10px, -10px);
+}
+
+.border-container::after {
+  transform: translate(10px, 10px);
+}
+
