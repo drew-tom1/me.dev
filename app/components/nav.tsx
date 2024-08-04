@@ -31,7 +31,7 @@ export function Navbar() {
           <div className="flex flex-row space-x-0 pr-10">
             {Object.entries(navItems).map(([path, { name }]) => {
               const isActive = pathname === path;
-              const linkClass = `transition-all hover:text-neutral-800 dark:hover:text-cyan-200 hover:scale-105 flex align-middle relative py-1 px-2 m-1 ${isActive ? 'active' : ''}`;
+              const linkClass = `transition-all hover:text-neutral-800 dark:hover:text-cyan-200 hover:scale-105 flex align-middle relative py-1 px-2 m-1 ${isActive ? 'scale-105 text-cyan-200' : ''}`;
 
               return (
                 <Link
