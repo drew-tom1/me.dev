@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   description: "portfolio of drew tom.",
   openGraph: {
     title: "drew tom",
-    description: "This is my portfolio.",
+    description: "hi there!",
     url: baseUrl,
-    siteName: "My Portfolio",
+    siteName: "portfolio | drew tom",
     locale: "en_US",
     type: "website",
   },
@@ -48,8 +48,7 @@ export default function RootLayout({
       lang="en"
       className={cx(
         "text-black bg-white dark:text-white dark:bg-zinc-900",
-        GeistSans.variable,
-        GeistMono.variable,
+        GeistMono.className
       )}
     >
       <head>
