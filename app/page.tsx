@@ -15,7 +15,7 @@ export default function Page() {
           delaySpeed={1000}
         />
       </h1>
-      <hr />
+      <hr className="border-gray-700 mb-4" />
       <p className="my-4">
         {`I'm a second year at San Jose State University studying cybersecurity and software engineering.
         I'm involved in some organizations on campus including SJSU's `}

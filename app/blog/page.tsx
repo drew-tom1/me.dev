@@ -11,7 +11,7 @@ export default function Page() {
       <h1 className="font-semibold text-4xl mb-6 tracking-tighter">
         writing about my investment journey!
       </h1>
-      <hr />
+      <hr className="border-gray-700 mb-6" />
       <BlogPosts />
     </section>
   );

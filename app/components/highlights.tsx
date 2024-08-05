@@ -1,13 +1,12 @@
-// components/Timeline.tsx
 import React from 'react';
 
-interface TimelineItemProps {
+interface HighlightItemProps {
   date: string;
   title: string;
   description: string;
 }
 
-const TimelineItem: React.FC<TimelineItemProps> = ({ date, title, description }) => {
+const HighlightItem: React.FC<HighlightItemProps> = ({ date, title, description }) => {
   return (
     <div className="flex flex-col md:flex-row md:items-center">
       <div className="bg-gray-200 rounded-full h-2 w-2 flex-shrink-0"></div>
@@ -20,8 +19,8 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ date, title, description })
   );
 };
 
-const Timeline: React.FC = () => {
-  const timelineItems = [
+const Highlights: React.FC = () => {
+  const highlightItems = [
     {
       date: 'Jun 2024 - Present',
       title: 'Software Developer @ DataAnnotation.tech',
@@ -40,12 +39,12 @@ const Timeline: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-8">
-      {timelineItems.map((item, index) => (
-        <TimelineItem key={index} date={item.date} title={item.title} description={item.description} />
+    <div className="flex flex-col gap-8 mt-2">
+      {highlightItems.map((item, index) => (
+        <HighlightItem key={index} date={item.date} title={item.title} description={item.description} />
       ))}
     </div>
   );
 };
 
-export default Timeline;
+export default Highlights;

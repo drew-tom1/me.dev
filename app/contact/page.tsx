@@ -30,7 +30,7 @@ export default function Page() {
       <h1 className="font-semibold text-4xl mb-6 tracking-tighter">
         let's chat!
       </h1>
-      <hr />
+      <hr className="border-gray-700 mb-4" />
       <ul className="list-none space-y-4 mt-4">
         <li className="flex items-center">
           <span className="dark:text-white">LinkedIn</span>

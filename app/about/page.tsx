@@ -1,4 +1,4 @@
-import Timeline from "app/components/timeline";
+import Highlights from "app/components/highlights";
 import "../global.css";
 
 export const metadata = {
@@ -12,10 +12,12 @@ export default function Page() {
       <h1 className="font-semibold text-4xl mb-6 tracking-tighter">
         a little (more) about me!
       </h1>
-      <hr />
-      <div className="my-2 rounded-lg border-2 p-4 transition-all duration-300">
-        <h3 className="mb-2 text-xl font-medium">work</h3>
-        <Timeline />
+      <hr className="border-gray-700 mb-6" />
+      <div className="relative border border-gray-700 rounded-lg p-4">
+        <div className="absolute -top-4 left-4 bg-zinc-900 px-2 text-lg text-cyan-200">
+          💼 work experience
+        </div>
+        <Highlights />
       </div>
     </section>
   );
