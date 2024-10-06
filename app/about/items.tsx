@@ -5,12 +5,12 @@ export const resumeItems = [
       description: '',
     },
     {
-      date: 'May 2024 - Present',
-      title: 'Software Engineering Intern @ SJSU Computer and Software Engineering Society',
+      date: 'May 2024 - August 2024',
+      title: 'Development Team Officer @ SJSU Computer and Software Engineering Society',
       description: '',
     },
     {
-      date: 'Jul 2024 - Present',
+      date: 'Jul 2024 - September 2024',
       title: 'Software Engineering Fellow @ Headstarter',
       description: '',
     },
