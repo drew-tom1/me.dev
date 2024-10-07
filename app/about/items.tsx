@@ -2,17 +2,17 @@ export const resumeItems = [
     {
       date: 'Jun 2024 - Present',
       title: 'Software Developer @ DataAnnotation.tech',
-      description: '',
+      description: 'Data-labeling and verifying accuracy of generated code.',
     },
     {
       date: 'May 2024 - August 2024',
       title: 'Development Team Officer @ SJSU Computer and Software Engineering Society',
-      description: '',
+      description: 'Worked on club website and URL-shortening service',
     },
     {
       date: 'Jul 2024 - September 2024',
       title: 'Software Engineering Fellow @ Headstarter',
-      description: '',
+      description: 'Building projects!',
     },
   ];
 
