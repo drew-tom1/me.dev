@@ -9,7 +9,7 @@ interface HighlightItemProps {
 const HighlightItem: React.FC<HighlightItemProps> = ({ date, title, description }) => {
   return (
     <div className="flex flex-col md:flex-row md:items-center">
-      <div className="bg-gray-200 rounded h-2 w-2 flex-shrink-0"></div>
+      <div className="bg-black rounded h-2 w-2 flex-shrink-0 dark:bg-gray-200"></div>
       <div className="flex flex-col md:ml-4 mt-4 md:mt-0">
         <span className="text-sm font-semibold">{date}</span>
         <h3 className="text-l font-bold">{title}</h3>
