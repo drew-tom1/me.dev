@@ -39,7 +39,7 @@ export default function Page() {
             href="https://www.linkedin.com/in/drew-tom"
             target="_blank"
             rel="noopener noreferrer"
-            className="dark:text-white hover:text-gray-600 dark:hover:text-cyan-200"
+            className="dark:text-white hover:text-red-400 duration-300 dark:hover:text-cyan-200"
           >
             in/drew-tom
           </a>
@@ -51,7 +51,7 @@ export default function Page() {
             href="https://github.com/drew-tom1"
             target="_blank"
             rel="noopener noreferrer"
-            className="dark:text-white hover:text-gray-600 dark:hover:text-cyan-200"
+            className="dark:text-white hover:text-red-400 duration-300 dark:hover:text-cyan-200"
           >
             drew-tom1
           </a>
@@ -61,7 +61,7 @@ export default function Page() {
           <HorizontalArrowIcon />
           <a
             href="mailto:drew.tom@sjsu.edu"
-            className="dark:text-white hover:text-gray-600 dark:hover:text-cyan-200"
+            className="dark:text-white hover:text-red-400 duration-300 dark:hover:text-cyan-200"
           >
             drew.tom@sjsu.edu
           </a>

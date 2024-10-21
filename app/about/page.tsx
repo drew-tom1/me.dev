@@ -16,19 +16,19 @@ export default function Page() {
       </h1>
       <hr className="border-gray-700 mb-6" />
       <div className="relative border border-gray-700 rounded-lg p-4">
-        <div className="absolute -top-4 left-4 bg-zinc-900 px-2 text-lg text-cyan-200">
+        <div className="absolute -top-4 left-4 dark:bg-zinc-900 bg-stone-200 px-2 text-lg text-red-400">
           💼 work experience
         </div>
         <Highlights highlightItems={resumeItems}/>
       </div>
       <div className="relative border border-gray-700 rounded-lg p-4 my-6">
-        <div className="absolute -top-4 left-4 bg-zinc-900 px-2 text-lg text-cyan-200">
+        <div className="absolute -top-4 left-4 dark:bg-zinc-900 bg-stone-200 px-2 text-lg text-red-400">
           ⚙️ projects
         </div>
         <Highlights highlightItems={projectItems}/>
       </div>
       <div className="relative border border-gray-700 rounded-lg p-4">
-        <div className="absolute -top-4 left-4 bg-zinc-900 px-2 text-lg text-cyan-200">
+        <div className="absolute -top-4 left-4 dark:bg-zinc-900 bg-stone-200 px-2 text-lg text-red-400">
           🧙‍♂️ hobbies
         </div>
         <Highlights highlightItems={hobbyItems}/>
