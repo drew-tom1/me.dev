@@ -1,8 +1,18 @@
 export const resumeItems = [
     {
-      date: 'Jun 2024 - Present',
+      date: 'June 2024 - Present',
       title: 'Software Developer @ DataAnnotation.tech',
       description: 'Data-labeling and verifying accuracy of generated code.',
+    },
+    {
+      date: 'September 2024 - Present',
+      title: 'Software Engineering Intern @ Arctex Inc.',
+      description: 'Ed-tech startup catered to improving college applications.',
+    },
+    {
+      date: 'N/A',
+      title: 'Incoming AI/ML Engineering Intern @ SuperINTRO',
+      description: 'Social media platform designed to revolutionize the way people connect online',
     },
     {
       date: 'May 2024 - August 2024',
@@ -10,7 +20,7 @@ export const resumeItems = [
       description: 'Worked on club website and URL-shortening service',
     },
     {
-      date: 'Jul 2024 - September 2024',
+      date: 'July 2024 - September 2024',
       title: 'Software Engineering Fellow @ Headstarter',
       description: 'Building projects!',
     },
