@@ -14,33 +14,35 @@ export default function Page() {
       </h1>
       <hr className="border-gray-700 mb-6" />
       <VerticalTimeline layout="1-column">
+        <VerticalTimelineElement visible={true} contentStyle={{ background: 'var(--color-zinc-900)', color: '#fff', border: 'solid', borderWidth: '1px'}} date="May 2025 - August 2025" dateClassName="text-center">
+          <h3>Incoming Software Engineering Intern</h3>
+          <h4>USAA</h4>
+          <p>
+            Contact Center Organization
+          </p>
+          <li>Java w/ Spring Boot and GraphQL</li>
+          <li>JavaScript w/ React.js</li>
+          <li>Agile/Scrum methodologies and SDLC</li>
+        </VerticalTimelineElement>
         <VerticalTimelineElement visible={true} contentStyle={{ background: 'var(--color-zinc-900)', color: '#fff', border: 'solid', borderWidth: '1px'}} date="September 2024 - January 2025" dateClassName="text-center">
           <h3>Software Engineering Intern</h3>
           <h4>Arctex Inc</h4>
           <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+            CollegeAppAssist Team
           </p>
+          <li>JavaScript w/ React.js</li>
+          <li>RESTful APIs w/ Express.js and MongoDB</li>
+          <li>API Testing w/ Postman</li>
         </VerticalTimelineElement>
         <VerticalTimelineElement visible={true} contentStyle={{ background: 'var(--color-zinc-900)', color: '#fff', border: 'solid', borderWidth: '1px'}} date="September 2024 - January 2025" dateClassName="text-center">
-          <h3>Creative Director</h3>
-          <h4>Miami, FL</h4>
+          <h3>Software Engineering Intern</h3>
+          <h4>San Jose State University</h4>
           <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+            Development Team
           </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement visible={true} contentStyle={{ background: 'var(--color-zinc-900)', color: '#fff', border: 'solid', borderWidth: '1px'}} date="September 2024 - January 2025" dateClassName="text-center">
-          <h3>Creative Director</h3>
-          <h4>Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement visible={true} contentStyle={{ background: 'var(--color-zinc-900)', color: '#fff', border: 'solid', borderWidth: '1px'}} date="September 2024 - January 2025" dateClassName="text-center">
-          <h3>Creative Director</h3>
-          <h4>Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-          </p>
+          <li></li>
+          <li></li>
+          <li></li>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </section>
