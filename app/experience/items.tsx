@@ -1,63 +1,52 @@
-export const resumeItems = [
-    {
-      date: 'June 2024 - Present',
-      title: 'Software Developer @ DataAnnotation.tech',
-      description: 'Data-labeling and verifying accuracy of generated code.',
-    },
-    {
-      date: 'September 2024 - Present',
-      title: 'Software Engineering Intern @ Arctex Inc.',
-      description: 'Ed-tech startup catered to improving college applications.',
-    },
-    {
-      date: 'N/A',
-      title: 'Incoming AI/ML Engineering Intern @ SuperINTRO',
-      description: 'Social media platform designed to revolutionize the way people connect online',
-    },
-    {
-      date: 'May 2024 - August 2024',
-      title: 'Development Team Officer @ SJSU Computer and Software Engineering Society',
-      description: 'Worked on club website and URL-shortening service',
-    },
-    {
-      date: 'July 2024 - September 2024',
-      title: 'Software Engineering Fellow @ Headstarter',
-      description: 'Building projects!',
-    },
-  ];
+import usaa from "./photos/usaa.jpg";
+import arctex from './photos/arctex.png';
+import sjsu from './photos/sjsu.png';
+import { StaticImageData } from "next/image";
 
-export const projectItems = [
-    {
-      date: 'Sep 2023 - Nov 2023',
-      title: 'Hydro Sense',
-      description: '',
-    },
-    {
-      date: 'Dec 2023 - Jan 2024',
-      title: 'File Sorter',
-      description: '',
-    },
-    {
-      date: 'Dec 2023 - Feb 2024',
-      title: 'Stock Prediction App',
-      description: '',
-    },
-  ];
+export type Experience = {
+  title: string,
+  company: string,
+  department: string,
+  photo: StaticImageData,
+  date: string,
+  bullets: Array<string>
+}
 
-export const hobbyItems = [
-    {
-      date: '',
-      title: 'Warhammer 40,000',
-      description: '',
-    },
-    {
-      date: '',
-      title: 'Reading',
-      description: '',
-    },
-    {
-      date: '',
-      title: 'Brazilian Jiu Jutsu',
-      description: '',
-    },
-  ];
+export const workExperiences: Experience[] = [
+  {
+    title: "Incoming Software Engineering Intern",
+    company: "United States Automotive Association (USAA)",
+    department: "Contact Center Organization",
+    photo: usaa,
+    date: "May 2025 - August 2025",
+    bullets: [
+      'Java w/ Spring Boot and GraphQL',
+      'JavaScript w/ React.js',
+      "Agile/Scrum methodologies and SDLC"
+    ]
+  },
+  {
+    title: "Software Engineering Intern",
+    company: "Arctex Inc",
+    department: "CollegeAppAssist Team",
+    photo: arctex,
+    date: "September 2024 - January 2025",
+    bullets: [
+      'RESTful APIs w/ Express.js and MongoDB',
+      'JavaScript w/ React.js',
+      "API Testing w/ Postman"
+    ]
+  },
+  {
+    title: "Software Engineering Intern",
+    company: "San Jose State University (SJSU)",
+    department: "Development Team",
+    photo: sjsu,
+    date: "April 2024 - September 2024",
+    bullets: [
+      'Python w/ FastAPI',
+      'JavaScript w/ React.js',
+      "SQLite and Express.js"
+    ]
+  }
+]
