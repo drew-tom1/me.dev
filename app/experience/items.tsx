@@ -14,9 +14,9 @@ export type Experience = {
 
 export const workExperiences: Experience[] = [
   {
-    title: "Incoming Software Engineering Intern",
-    company: "United States Automotive Association (USAA)",
-    department: "Contact Center Organization",
+    title: "Software Engineering Intern",
+    company: "United Services Automotive Association (USAA)",
+    department: "Contact Center Technologies",
     photo: usaa,
     date: "May 2025 - August 2025",
     bullets: [
@@ -26,7 +26,7 @@ export const workExperiences: Experience[] = [
     ]
   },
   {
-    title: "Software Engineering Intern",
+    title: "Software Engineering Intern (Backend)",
     company: "Arctex Inc",
     department: "CollegeAppAssist Team",
     photo: arctex,
