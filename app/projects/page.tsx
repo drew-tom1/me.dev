@@ -1,11 +1,11 @@
-import Router from "next/router";
+import projects from "./project-info/project-info.json"
 
 export const metadata = {
   title: "Projects",
   description: "Some projects I've done!",
 };
 
-export default function Page() {
+export default function ProjectOverviewPage() {
   return (
     <section>
       <h1 className="font-semibold text-4xl mb-6 tracking-tighter">
