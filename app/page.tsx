@@ -4,28 +4,33 @@ import "./global.css";
 
 export default function Page() {
   return (
-    <section>
-      <h1 className="mb-6 text-4xl font-semibold tracking-tighter">
-        <Typewriter
-          words={["hi, i'm drew!"]}
-          cursor
-          cursorBlinking
-          typeSpeed={80}
-          deleteSpeed={50}
-          delaySpeed={1000}
-        />
-      </h1>
-      <hr className="border-gray-700 mb-4" />
-      <p className="my-4">
-        {`I'm a second year at San Jose State University studying cybersecurity and software engineering.
-        I'm involved in some organizations on campus including SJSU's `}
-        <a href="https://sce.sjsu.edu/" target="_blank" rel="noopener noreferrer" className="hover:scale-105 text-red-400 dark:text-cyan-300">Software and Computer Engineering Society</a>
-        {`. I love learning about new things. In my free time, I love playing with my cats, learning about investments, or nerding out over Warhammer 40,000!`}
-      </p>
-      <p className="my-4">Contact me for my full resume!</p>
-      <div className="my-4">
+    <div>
+        <div className="inline-flex relative border border-gray-700 rounded-lg p-4">
+          <div className="absolute -top-4 left-4 bg-zinc-900 px-2 text-lg text-cyan-300">
+            👋
+            <Typewriter
+              words={[" hi, i'm drew!"]}
+              cursor
+              cursorBlinking
+              typeSpeed={80}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </div>
+          <ul style={{ listStyleType: 'disc', paddingLeft: '10px'}} className="m-2">
+            <li>third-year student at san jose state university</li>
+            <li>majoring in network engineering, double minor in business and computer science</li>
+            <li>current software engineering intern at usaa</li>
+            <li>currently learning: golang</li>
+            <li>treasurer @ sjsu theta tau, dev team @ sjsu sce</li>
+          </ul>
+      </div>
+      <div className="flex relative border border-gray-700 rounded-lg p-4 mt-6">
+        <div className="absolute -top-4 left-4 bg-zinc-900 px-2 text-lg text-cyan-300">
+          📜blogs
+        </div>
         <BlogPosts  />
       </div>
-    </section>
+    </div>
   );
 }
