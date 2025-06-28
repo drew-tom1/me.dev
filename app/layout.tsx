@@ -48,7 +48,7 @@ export default function RootLayout({
       lang="en"
       className={cx(
         "text-black bg-stone-200 dark:text-gray-200 dark:bg-zinc-900",
-        GeistMono.className
+        GeistSans.className
       )}
     >
       <head>
