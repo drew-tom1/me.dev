@@ -8,10 +8,11 @@ export const metadata = {
 export default function ProjectOverviewPage() {
   return (
     <section>
-      <h1 className="font-semibold text-4xl mb-6 tracking-tighter">
+      <div className="relative border border-gray-700 rounded-lg p-4">
+        <div className="absolute -top-4 left-4 bg-zinc-900 px-2 text-lg text-cyan-200">
         my projects!
-      </h1>
-      <hr className="border-gray-700 mb-4" />
+        </div>
+      </div>
     </section>
   );
 }
