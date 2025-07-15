@@ -1,6 +1,7 @@
-import usaa from "./photos/usaa.jpg";
+import usaa from "./photos/usaa.png";
 import arctex from './photos/arctex.png';
 import sjsu from './photos/sjsu.png';
+import thetatau from './photos/thetatau.png';
 import { StaticImageData } from "next/image";
 
 export type Experience = {
@@ -15,7 +16,7 @@ export type Experience = {
 export const workExperiences: Experience[] = [
   {
     title: "Software Engineering Intern",
-    company: "United Services Automotive Association (USAA)",
+    company: "United Services Automotive Association",
     department: "Contact Center Technologies",
     photo: usaa,
     date: "May 2025 - August 2025",
@@ -47,6 +48,29 @@ export const workExperiences: Experience[] = [
       'Python w/ FastAPI',
       'JavaScript w/ React.js',
       "SQLite and Express.js"
+    ]
+  }
+]
+/**
+ * todo
+ */
+export type Extracurricular = {
+  title: string,
+  organization: string,
+  tenure: string,
+  photo: StaticImageData
+  bullets: Array<string>
+}
+
+export const campusInvolvement: Extracurricular[] = [
+  {
+    title: "Treasurer & Software Engineer",
+    organization: "Theta Tau - Omega Epsilon Chapter",
+    tenure: "Spring 2025 - Spring 2026",
+    photo: thetatau,
+    bullets: [
+      'Lead Software Engineer on Chapter Finance Tool',
+      ''
     ]
   }
 ]
