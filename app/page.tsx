@@ -1,6 +1,8 @@
 import { BlogPosts } from "app/components/posts";
 import { Typewriter } from "nextjs-simple-typewriter";
 import "./global.css";
+import { projects } from "./projects/project-info/projects";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -29,6 +31,22 @@ export default function Page() {
           <div className="absolute -top-4 left-4 bg-zinc-900 px-2 text-lg text-cyan-200">
             🚧projects
           </div>
+          <ul className="mt-2 space-y-3">
+            {projects.map((project) => (
+              <li key={project.slug} className="group rounded-md hover:bg-gray-800/50 transition">
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="flex justify-between items-start p-2 cursor-pointer"
+                >
+                  <div>
+                    <span className="text-white font-medium hover:underline">{project.name}</span>
+                    <p className="text-sm text-gray-400">{project.description}</p>
+                  </div>
+                  <span className="text-cyan-200 group-hover:translate-x-1 transition">→</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="relative border border-gray-700 rounded-lg p-4">
@@ -40,7 +58,6 @@ export default function Page() {
       </div>
 
       <div className="w-80 flex flex-col gap-4">
-        {/* Top two horizontal boxes */}
         <div className="relative border border-gray-700 rounded-lg p-4">
           <div className="absolute -top-4 left-4 bg-zinc-900 px-2 text-lg text-cyan-200">
             i'm currently...
@@ -52,7 +69,6 @@ export default function Page() {
           </ul>
         </div>
         
-        {/* Bottom long vertical box (fills rest of height) */}
         <div className="flex-1 bg-gray-800 border border-gray-700 rounded-lg p-2" />
       </div>
     </div>

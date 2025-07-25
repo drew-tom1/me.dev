@@ -4,7 +4,7 @@ import "../global.css";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Image from 'next/image';
-import { Experience, workExperiences } from "./items";
+import { campusInvolvement, Experience, Extracurricular, workExperiences } from "./items";
 
 export default function Page() {
   return (
@@ -26,7 +26,7 @@ export default function Page() {
                       width={100}
                       height={100}
                       className="rounded-xl" 
-                      style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                      style={{ objectFit: 'cover', width: '100%', height: '100%', backgroundColor: 'white' }}
                     />
                   </div>
                 }
@@ -53,6 +53,37 @@ export default function Page() {
           <div className="absolute -top-4 left-4 bg-zinc-900 px-2 text-lg text-cyan-200">
           extracurriculars
           </div>
+          <VerticalTimeline layout="1-column">
+            {campusInvolvement.map((extracurriculars: Extracurricular, index) => (
+              <VerticalTimelineElement 
+                key={index}  
+                icon={                
+                  <div className="w-full h-full flex items-center justify-center">
+                    <Image
+                      src={extracurriculars.photo}
+                      alt="company logo"
+                      width={100}
+                      height={100}
+                      className="rounded-xl" 
+                      style={{ objectFit: 'cover', width: '100%', height: '100%', backgroundColor: 'white' }}
+                    />
+                  </div>
+                }
+                visible={true} 
+                contentStyle={{ background: 'var(--color-zinc-900)', color: '#fff', border: '1px solid var(--color-gray-700)', boxShadow: 'none'}} 
+                date={extracurriculars.tenure} 
+                dateClassName="text-center"
+              >
+                <h3>{extracurriculars.title}</h3>
+                <h4>{extracurriculars.organization}</h4><br />
+                <ul>
+                  {extracurriculars.bullets.map((bullet, i) => (
+                    <li key={i}>- {bullet}</li>
+                  ))}
+                </ul>
+              </VerticalTimelineElement>
+            ))}
+          </VerticalTimeline>
         </div>
       </section>
     </div>

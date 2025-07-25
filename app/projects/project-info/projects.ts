@@ -1,0 +1,38 @@
+export const projects = [
+  {
+    slug: "minerva",
+    name: "Minerva",
+    description: "File encryption and compression service",
+    timeline: "May 2025 - September 2025",
+    github: "https://github/drew-tom1/minerva",
+    content: `Minerva is a Golang-based application that securely encrypts and compresses files before uploading to S3...`,
+    technologies: ["Golang", "AWS S3", "Render", "AES"],
+  },
+  {
+    slug: "whisper",
+    name: "Whisper",
+    description: "Bluetooth signal strength classifier",
+    timeline: "May 2025 - September 2025",
+    github: "https://github/drew-tom1/whisper",
+    content: `A TinyML model deployed on the Nucleo F401RE to estimate power usage based on Bluetooth activity...`,
+    technologies: ["TinyML", "STM32", "Bluetooth Low Energy", "TensorFlow Lite"],
+  },
+  {
+    slug: "charter",
+    name: "Charter",
+    description: "Finance tool for student organizations",
+    timeline: "April 2025 - September 2025",
+    github: "https://github/drew-tom1/charter",
+    content: `A TinyML model deployed on the Nucleo F401RE to estimate power usage based on Bluetooth activity...`,
+    technologies: ["TinyML", "STM32", "Bluetooth Low Energy", "TensorFlow Lite"],
+  },
+  {
+    slug: "prosperity",
+    name: "Prosperity",
+    description: "ML-powered financial advisor",
+    timeline: "August 2024 - January 2025",
+    github: "https://github/drew-tom1/prosperity",
+    content: `A TinyML model deployed on the Nucleo F401RE to estimate power usage based on Bluetooth activity...`,
+    technologies: ["TinyML", "STM32", "Bluetooth Low Energy", "TensorFlow Lite"],
+  },
+];
