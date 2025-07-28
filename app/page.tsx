@@ -77,7 +77,7 @@ export default function Page() {
 
           <div className="flex-1 border border-gray-700 rounded-md p-3 bg-gray-800/50">
             <h3 className="text-white font-medium">🏂 Snowboarding</h3>
-            <p className="text-gray-400 text-sm">I've had the chance to snowboard all around California. </p>
+            <p className="text-gray-400 text-sm">I've had the chance to snowboard all around California. No other feeling than carving through fresh powder!</p>
             <ul className="mt-2 text-gray-400 list-disc list-inside text-sm">
               <li>Salomon Assassin All-Mountain</li>
               <li>Salomon Pact Bindings</li>
