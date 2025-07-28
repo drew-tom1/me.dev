@@ -5,7 +5,7 @@ export const projects = [
     description: "File encryption and compression service",
     timeline: "May 2025 - September 2025",
     github: "https://github/drew-tom1/minerva",
-    content: `Minerva is a Golang-based application that securely encrypts and compresses files before uploading to S3...`,
+    content: `Minerva is a Golang-based application that securely encrypts and compresses files before uploading to S3. I've really been wanting to learn Golang and this was a perfect opportunity to do so. I also wanted to learn more about file encryption, and how to securely store files in the cloud. Minerva uses AES encryption to ensure that files are secure, and uses S3 for storage.`,
     technologies: ["Golang", "AWS S3", "Render", "AES"],
   },
   {
@@ -14,7 +14,7 @@ export const projects = [
     description: "Bluetooth signal strength classifier",
     timeline: "May 2025 - September 2025",
     github: "https://github/drew-tom1/whisper",
-    content: `A TinyML model deployed on the Nucleo F401RE to estimate power usage based on Bluetooth activity...`,
+    content: `I created Whisper to classify Bluetooth signal strength using machine learning. It was my first project into embedded systems, and was an effort to broaden my understanding of software engineering. I had never worked with C or embedded systems prior to this project, my experience was strictly in web development. I learned a lot about low-level programming, and how to work with hardware.`,
     technologies: ["TinyML", "STM32", "Bluetooth Low Energy", "TensorFlow Lite"],
   },
   {
@@ -23,8 +23,8 @@ export const projects = [
     description: "Finance tool for student organizations",
     timeline: "April 2025 - September 2025",
     github: "https://github/drew-tom1/charter",
-    content: `A TinyML model deployed on the Nucleo F401RE to estimate power usage based on Bluetooth activity...`,
-    technologies: ["TinyML", "STM32", "Bluetooth Low Energy", "TensorFlow Lite"],
+    content: `Charter is a management system built in-house for San Jose State University's Chapter of Theta Tau. It allows easy roster and finance management, simplifying workflows from tedious spreadsheets to an interactive dashboard.`,
+    technologies: ["Next.js", "Supabase", "TypeScript", "Express.js", "OAuth"],
   },
   {
     slug: "prosperity",
@@ -32,7 +32,16 @@ export const projects = [
     description: "ML-powered financial advisor",
     timeline: "August 2024 - January 2025",
     github: "https://github/drew-tom1/prosperity",
-    content: `A TinyML model deployed on the Nucleo F401RE to estimate power usage based on Bluetooth activity...`,
-    technologies: ["TinyML", "STM32", "Bluetooth Low Energy", "TensorFlow Lite"],
+    content: `Prosperity was my first software project, and was designed to be a predictive financial advisor. It uses machine learning to analyze financial data and provide personalized advice.`,
+    technologies: ["FastAPI", "Next.js", "TypeScript", "Machine Learning"],
+  },
+  {
+    slug: "sjsuttwebsite",
+    name: "SJSU Theta Tau Website",
+    description: "Overhaul of SJSU Theta Tau's website",
+    timeline: "May 2025 - July 2025",
+    github: "https://github/sjsu-tt-software/sjsuttwebsite",
+    content: `Theta Tau was a student organization near and dear to my heart, and we sorely lacked campus presence. I wanted to change that, and rebuilt our old website and worked with school officials to have our website posted across SJSU's various engineering organization collections.`,
+    technologies: ["Next.js", "TypeScript"],
   },
 ];
