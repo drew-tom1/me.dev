@@ -34,17 +34,6 @@ export default async function ProjectDetailPage(props: Props) {
             GitHub Repo
           </a>
         )}
-
-        {project.demo && (
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-cyan-400 hover:underline"
-          >
-            Live Demo
-          </a>
-        )}
       </div>
 
       <div>
