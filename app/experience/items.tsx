@@ -64,13 +64,36 @@ export type Extracurricular = {
 
 export const campusInvolvement: Extracurricular[] = [
   {
-    title: "Treasurer & Software Engineer",
+    title: "Treasurer",
     organization: "Theta Tau - Omega Epsilon Chapter",
-    tenure: "Spring 2025 - Spring 2026",
+    tenure: "May 2024 - Present",
     photo: thetatau,
     bullets: [
-      'Lead Software Engineer on Chapter Finance Tool',
-      ''
+      'Reduced chapter expenses by $1,500 per semester through budget optimization',
+      'Managed financial records and transactions',
+      'Organized fundraising events to support chapter activities'
     ]
-  }
+  },
+  {
+    title: "Lead Software Engineer",
+    organization: "Theta Tau - Omega Epsilon Chapter",
+    tenure: "May 2024 - Present",
+    photo: thetatau,
+    bullets: [
+      'Spearheaded the development of the Chapter Finance Tool',
+      'Overhauled the SJSU Theta Tau website',
+      'Implemented project-based learning initiatives for new members'
+    ]
+  },
+  {
+    title: "New Member Educator",
+    organization: "Theta Tau - Omega Epsilon Chapter",
+    tenure: "January 2024 - May 2024",
+    photo: thetatau,
+    bullets: [
+      'Reduced chapter expenses by $1,500 per semester through budget optimization',
+      'Managed financial records and transactions',
+      'Organized fundraising events to support chapter activities'
+    ]
+  },
 ]
