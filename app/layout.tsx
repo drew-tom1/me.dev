@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Navbar } from "./components/nav";
+import { ThemeScript } from "./components/theme-script";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
@@ -47,11 +48,13 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        "text-black bg-stone-200 dark:text-gray-200 dark:bg-zinc-900",
+        "bg-[var(--cream-bg)] text-black dark:bg-zinc-900 dark:text-gray-100",
         GeistSans.className
       )}
+      suppressHydrationWarning
     >
       <head>
+        <ThemeScript />
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="antialiased max-w-4xl mx-auto mt-8 lg:mx-auto">

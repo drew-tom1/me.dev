@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@source "..";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 ::selection {
   background-color: #47a3f3;
@@ -7,10 +10,18 @@
 
 .vertical-timeline::before {
   width: 1.5px !important;
-  background: var(--color-gray-700) !important;
+  background: var(--timeline-line) !important;
+}
+
+.vertical-timeline-element-date {
+  color: var(--vte-date-color) !important;
 }
 
 .vertical-timeline-element-icon {
+  background: var(--cream-bg);
+}
+
+.dark .vertical-timeline-element-icon {
   background: #fefefe;
 }
 
@@ -24,18 +35,29 @@
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
+  color-scheme: light;
+  --cream-bg: #faf6ec;
+  --cream-border: #cfc3ae;
+  --cream-surface: #f4efe4;
+  --cream-hover: #e5dac6;
+  --vte-content-bg: #f7f3ea;
+  --vte-content-fg: #292524;
+  --vte-content-border: var(--cream-border);
+  --vte-date-color: #6b6254;
+  --timeline-line: #c4b8a4;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-  html {
-    color-scheme: dark;
-  }
+.dark {
+  --sh-class: #4c97f8;
+  --sh-identifier: white;
+  --sh-keyword: #f47067;
+  --sh-string: #0fa295;
+  color-scheme: dark;
+  --vte-content-bg: #18181b;
+  --vte-content-fg: #ffffff;
+  --vte-content-border: #3f3f46;
+  --vte-date-color: #a1a1aa;
+  --timeline-line: #3f3f46;
 }
 
 html {

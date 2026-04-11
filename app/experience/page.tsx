@@ -1,6 +1,5 @@
 "use client";
 
-import "../global.css";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Image from 'next/image';
@@ -10,8 +9,8 @@ export default function Page() {
   return (
     <div>
       <section>
-        <div className="relative border border-gray-700 rounded-lg p-4">
-          <div className="absolute -top-4 left-4 bg-zinc-900 px-2 text-lg text-cyan-200">
+        <div className="relative rounded-lg border border-[var(--cream-border)] p-4 dark:border-gray-700">
+          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-black dark:bg-zinc-900 dark:text-cyan-200">
           where i've been!
           </div>
           <VerticalTimeline layout="1-column">
@@ -31,7 +30,7 @@ export default function Page() {
                   </div>
                 }
                 visible={true} 
-                contentStyle={{ background: 'var(--color-zinc-900)', color: '#fff', border: '1px solid var(--color-gray-700)', boxShadow: 'none'}} 
+                contentStyle={{ background: 'var(--vte-content-bg)', color: 'var(--vte-content-fg)', border: '1px solid var(--vte-content-border)', boxShadow: 'none'}}
                 date={experience.date} 
                 dateClassName="text-center"
               >
@@ -49,8 +48,8 @@ export default function Page() {
         </div>
       </section>
       <section className="mt-7">
-        <div className="relative border border-gray-700 rounded-lg p-4">
-          <div className="absolute -top-4 left-4 bg-zinc-900 px-2 text-lg text-cyan-200">
+        <div className="relative rounded-lg border border-[var(--cream-border)] p-4 dark:border-gray-700">
+          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-black dark:bg-zinc-900 dark:text-cyan-200">
           extracurriculars
           </div>
           <VerticalTimeline layout="1-column">
@@ -70,7 +69,7 @@ export default function Page() {
                   </div>
                 }
                 visible={true} 
-                contentStyle={{ background: 'var(--color-zinc-900)', color: '#fff', border: '1px solid var(--color-gray-700)', boxShadow: 'none'}} 
+                contentStyle={{ background: 'var(--vte-content-bg)', color: 'var(--vte-content-fg)', border: '1px solid var(--vte-content-border)', boxShadow: 'none'}}
                 date={extracurriculars.tenure} 
                 dateClassName="text-center"
               >
