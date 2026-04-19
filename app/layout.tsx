@@ -48,7 +48,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        "bg-[var(--cream-bg)] text-black dark:bg-zinc-900 dark:text-gray-100",
+        "bg-[var(--cream-bg)] text-[var(--text-fg)] dark:bg-zinc-900",
         GeistSans.className
       )}
       suppressHydrationWarning

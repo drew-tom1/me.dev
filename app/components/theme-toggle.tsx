@@ -43,9 +43,9 @@ export function ThemeToggle() {
       type="button"
       onClick={toggleTheme}
       aria-label="Toggle color theme"
-      className="ml-1 rounded-md px-2 py-1 text-sm transition-all hover:scale-105 text-neutral-700 hover:text-red-400 dark:text-neutral-200 dark:hover:text-cyan-200"
+      className="ml-1 rounded-md px-2 py-1 text-sm transition-all hover:scale-105 text-neutral-700 hover:text-red-400 dark:text-neutral-200 dark:hover:text-cyan-200 hover:cursor-pointer"
     >
-      {theme === "dark" ? "☀️ light" : "🌙 dark"}
+      {theme === "dark" ? "☀️" : "🌙"}
     </button>
   );
 }

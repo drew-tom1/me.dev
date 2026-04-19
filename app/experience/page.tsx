@@ -9,8 +9,8 @@ export default function Page() {
   return (
     <div>
       <section>
-        <div className="relative rounded-lg border border-[var(--cream-border)] p-4 dark:border-gray-700">
-          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-black dark:bg-zinc-900 dark:text-cyan-200">
+        <div className="relative rounded-lg border border-[var(--cream-border)] bg-[var(--cream-bg)] p-4 dark:border-gray-700 dark:bg-transparent">
+          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-[var(--text-fg)] dark:bg-zinc-900 dark:text-cyan-200">
           where i've been!
           </div>
           <VerticalTimeline layout="1-column">
@@ -48,8 +48,8 @@ export default function Page() {
         </div>
       </section>
       <section className="mt-7">
-        <div className="relative rounded-lg border border-[var(--cream-border)] p-4 dark:border-gray-700">
-          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-black dark:bg-zinc-900 dark:text-cyan-200">
+        <div className="relative rounded-lg border border-[var(--cream-border)] bg-[var(--cream-bg)] p-4 dark:border-gray-700 dark:bg-transparent">
+          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-[var(--text-fg)] dark:bg-zinc-900 dark:text-cyan-200">
           extracurriculars
           </div>
           <VerticalTimeline layout="1-column">

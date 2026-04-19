@@ -32,10 +32,10 @@ export function Navbar() {
           className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
         >
-          <div className="flex flex-row items-center space-x-0 rounded-lg border border-[var(--cream-border)] pr-0.5 text-black dark:border-gray-700 dark:text-gray-100">
+          <div className="flex flex-row items-center space-x-0 rounded-lg border border-[var(--cream-border)] pr-0.5 text-[var(--text-fg)] dark:border-gray-700">
             {Object.entries(navItems).map(([path, { name }]) => {
               const isActive = pathname === path;
-              const linkClass = `rounded-md transition-colors hover:bg-[var(--cream-hover)] dark:hover:bg-gray-800/80 flex align-middle relative py-1 px-2 m-1 ${isActive ? "font-bold" : "font-normal"}`;
+              const linkClass = `rounded-md transition-colors hover:bg-[var(--cream-hover)] dark:hover:bg-gray-800/80 flex align-middle relative py-1 px-2 m-1 ${isActive ? "bg-[var(--cream-hover)] dark:bg-gray-800/80" : ""}`;
 
               return (
                 <Link

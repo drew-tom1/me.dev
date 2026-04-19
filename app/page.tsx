@@ -9,7 +9,7 @@ export default function Page() {
     <div className="flex gap-4">
       <div className="flex-1 space-y-6">
         <div className="relative rounded-lg border border-[var(--cream-border)] p-4 dark:border-gray-700">
-          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-black dark:bg-zinc-900 dark:text-cyan-200">
+          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-[var(--text-fg)] dark:bg-zinc-900 dark:text-cyan-200">
             👋
             <Typewriter
               words={["hi, i'm drew!"]}
@@ -28,7 +28,7 @@ export default function Page() {
         </div>
 
         <div className="relative rounded-lg border border-[var(--cream-border)] p-4 dark:border-gray-700">
-          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-black dark:bg-zinc-900 dark:text-cyan-200">
+          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-[var(--text-fg)] dark:bg-zinc-900 dark:text-cyan-200">
             🚧projects
           </div>
           <ul className="mt-2 space-y-3">
@@ -39,10 +39,10 @@ export default function Page() {
                   className="flex justify-between items-start p-2 cursor-pointer"
                 >
                   <div>
-                    <span className="font-medium text-black hover:underline dark:text-gray-100">{project.name}</span>
+                    <span className="font-medium text-[var(--text-fg)] hover:underline">{project.name}</span>
                     <p className="text-sm text-stone-600 dark:text-gray-400">{project.description}</p>
                   </div>
-                  <span className="text-black transition group-hover:translate-x-1 dark:text-gray-100">→</span>
+                  <span className="text-[var(--text-fg)] transition group-hover:translate-x-1">→</span>
                 </Link>
               </li>
             ))}
@@ -50,7 +50,7 @@ export default function Page() {
         </div>
 
         <div className="relative rounded-lg border border-[var(--cream-border)] p-4 dark:border-gray-700">
-          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-black dark:bg-zinc-900 dark:text-cyan-200">
+          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-[var(--text-fg)] dark:bg-zinc-900 dark:text-cyan-200">
             📜blogs
           </div>
           <BlogPosts />
@@ -59,7 +59,7 @@ export default function Page() {
 
       <div className="w-80 flex flex-col gap-4">
         <div className="relative rounded-lg border border-[var(--cream-border)] p-4 dark:border-gray-700">
-          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-black dark:bg-zinc-900 dark:text-cyan-200">
+          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-[var(--text-fg)] dark:bg-zinc-900 dark:text-cyan-200">
             i'm currently...
           </div>
           <ul style={{ listStyleType: 'disc', paddingLeft: '10px' }}>
@@ -69,7 +69,7 @@ export default function Page() {
         </div>
         
         <div className="relative flex h-full flex-col gap-3 rounded-lg border border-[var(--cream-border)] p-4 dark:border-gray-700">
-          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-black dark:bg-zinc-900 dark:text-cyan-200">
+          <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-[var(--text-fg)] dark:bg-zinc-900 dark:text-cyan-200">
             🎨hobbies
           </div>
 

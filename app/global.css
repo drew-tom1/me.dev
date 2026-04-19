@@ -36,15 +36,16 @@
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
   color-scheme: light;
-  --cream-bg: #faf6ec;
-  --cream-border: #cfc3ae;
-  --cream-surface: #f4efe4;
-  --cream-hover: #e5dac6;
-  --vte-content-bg: #f7f3ea;
-  --vte-content-fg: #292524;
+  --text-fg: #3c3a37;
+  --cream-bg: #f6f5f2;
+  --cream-border: #d6d1c7;
+  --cream-surface: #eeece7;
+  --cream-hover: #e4e1d9;
+  --vte-content-bg: var(--cream-surface);
+  --vte-content-fg: var(--text-fg);
   --vte-content-border: var(--cream-border);
-  --vte-date-color: #6b6254;
-  --timeline-line: #c4b8a4;
+  --vte-date-color: #5f5c56;
+  --timeline-line: #c9c5bc;
 }
 
 .dark {
@@ -53,6 +54,7 @@
   --sh-keyword: #f47067;
   --sh-string: #0fa295;
   color-scheme: dark;
+  --text-fg: #f4f4f5;
   --vte-content-bg: #18181b;
   --vte-content-fg: #ffffff;
   --vte-content-border: #3f3f46;
