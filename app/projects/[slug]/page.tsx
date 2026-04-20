@@ -12,14 +12,15 @@ export default async function ProjectDetailPage(props: Props) {
   if (!project) return notFound();
 
   return (
-    <fieldset className="relative border border-gray-700 rounded-lg p-4 space-y-4">
-      <legend className="absolute -top-4 left-4 bg-zinc-900 px-2 text-lg text-cyan-200 font-semibold">
-        📁 {project.name}
-      </legend>
+    <div className="relative space-y-4 rounded-lg border border-[var(--cream-border)] p-4 dark:border-gray-700">
+      <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg font-semibold dark:bg-zinc-900">
+        <span className="text-[var(--text-fg)] dark:text-cyan-200">📁 </span>
+        <span className="text-[var(--text-fg)]">{project.name}</span>
+      </div>
 
-      <p className="text-gray-400 italic">{project.description}</p>
+      <p className="italic text-stone-600 dark:text-gray-400">{project.description}</p>
 
-      <div className="text-gray-300 whitespace-pre-wrap leading-relaxed">
+      <div className="whitespace-pre-wrap leading-relaxed text-stone-700 dark:text-gray-300">
         {project.content}
       </div>
 
@@ -29,7 +30,7 @@ export default async function ProjectDetailPage(props: Props) {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-cyan-200 hover:underline"
+            className="text-[var(--text-fg)] underline-offset-2 hover:underline"
           >
             GitHub Repo
           </a>
@@ -37,11 +38,11 @@ export default async function ProjectDetailPage(props: Props) {
       </div>
 
       <div>
-        <ul className="flex flex-wrap gap-3 text-gray-300">
+        <ul className="flex flex-wrap gap-3 text-[var(--text-fg)] dark:text-gray-200">
           {project.technologies.map((tech) => (
             <li
               key={tech}
-              className="bg-gray-800 px-3 py-1 rounded whitespace-nowrap"
+              className="rounded whitespace-nowrap bg-[var(--cream-surface)] px-3 py-1 dark:bg-gray-800"
             >
               {tech}
             </li>
@@ -49,6 +50,6 @@ export default async function ProjectDetailPage(props: Props) {
         </ul>
       </div>
 
-    </fieldset>
+    </div>
   );
 }

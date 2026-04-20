@@ -1,3 +1,4 @@
+import capitalone from "./photos/capitalone.png";
 import usaa from "./photos/usaa.png";
 import arctex from './photos/arctex.png';
 import sjsu from './photos/sjsu.png';
@@ -14,6 +15,16 @@ export type Experience = {
 }
 
 export const workExperiences: Experience[] = [
+  {
+    title: "Software Engineering Intern",
+    company: "Capital One",
+    department: "Technology Internship Program",
+    photo: capitalone,
+    date: "June 2026 - August 2026",
+    bullets: [
+      "Incoming Summer 2026: Full-Stack Engineering",
+    ]
+  },
   {
     title: "Software Engineering Intern",
     company: "United Services Automotive Association",

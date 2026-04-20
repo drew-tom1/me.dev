@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { ThemeToggle } from './theme-toggle';
 
 const navItems = {
   '/': {
@@ -31,10 +32,10 @@ export function Navbar() {
           className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
         >
-          <div className="flex flex-row space-x-0 pr-10 border rounded-lg border-gray-700">
+          <div className="flex flex-row items-center space-x-0 rounded-lg border border-[var(--cream-border)] pr-0.5 text-[var(--text-fg)] dark:border-gray-700">
             {Object.entries(navItems).map(([path, { name }]) => {
               const isActive = pathname === path;
-              const linkClass = `transition-all hover:text-red-400 dark:hover:text-cyan-200 hover:scale-105 flex align-middle relative py-1 px-2 m-1 ${isActive ? 'scale-110 text-red-400 dark:text-cyan-200' : ''}`;
+              const linkClass = `rounded-md transition-colors hover:bg-[var(--cream-hover)] dark:hover:bg-gray-800/80 flex align-middle relative py-1 px-2 m-1 ${isActive ? "bg-[var(--cream-hover)] dark:bg-gray-800/80" : ""}`;
 
               return (
                 <Link
@@ -46,6 +47,7 @@ export function Navbar() {
                 </Link>
               );
             })}
+            <ThemeToggle />
           </div>
         </nav>
       </div>
