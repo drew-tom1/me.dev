@@ -2,6 +2,7 @@ import { Photos } from "app/components/photos";
 import { Typewriter } from "nextjs-simple-typewriter";
 import { projects } from "./projects/project-info/projects";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -83,10 +84,11 @@ export default function Page() {
 
           <div className="flex flex-1 flex-col rounded-md border border-[var(--cream-border)] bg-[var(--cream-surface)] p-3 dark:border-gray-700 dark:bg-gray-800/50">
             <h3 className="font-medium text-stone-900 dark:text-gray-100">📚 reads</h3>
-            <ul className="list-inside list-disc text-sm text-stone-600 dark:text-gray-400">
+            <ul className="mt-2 list-inside list-disc text-sm text-stone-600 dark:text-gray-400">
               <li>Horus Heresy Series</li>
               <li>Helsreach Series</li>
               <li>Dark Imperium Series</li>
+              <li>Ahriman: The Omnibus</li>
             </ul>
           </div>
 
