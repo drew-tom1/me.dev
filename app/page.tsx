@@ -2,7 +2,6 @@ import { Photos } from "app/components/photos";
 import { Typewriter } from "nextjs-simple-typewriter";
 import { projects } from "./projects/project-info/projects";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Page() {
   return (
@@ -74,8 +73,7 @@ export default function Page() {
           </div>
 
           <div className="flex-1 rounded-md border border-[var(--cream-border)] bg-[var(--cream-surface)] p-3 dark:border-gray-700 dark:bg-gray-800/50">
-            <h3 className="font-medium text-stone-900 dark:text-gray-100">🏂 Snowboarding</h3>
-            <p className="text-sm text-stone-600 dark:text-gray-400">I've had the chance to snowboard all around California. No other feeling than carving through fresh powder!</p>
+            <h3 className="font-medium text-stone-900 dark:text-gray-100">🏂 snowboarding</h3>
             <ul className="mt-2 list-inside list-disc text-sm text-stone-600 dark:text-gray-400">
               <li>Salomon Assassin All-Mountain</li>
               <li>Salomon Pact Bindings</li>
@@ -84,8 +82,7 @@ export default function Page() {
           </div>  
 
           <div className="flex flex-1 flex-col rounded-md border border-[var(--cream-border)] bg-[var(--cream-surface)] p-3 dark:border-gray-700 dark:bg-gray-800/50">
-            <h3 className="font-medium text-stone-900 dark:text-gray-100">📚 Reading</h3>
-            <p className="mb-2 text-sm text-stone-600 dark:text-gray-400">I got into the setting of Warhamemr 40,000 a little over a year ago, and it's an amazing setting.</p>
+            <h3 className="font-medium text-stone-900 dark:text-gray-100">📚 reads</h3>
             <ul className="list-inside list-disc text-sm text-stone-600 dark:text-gray-400">
               <li>Horus Heresy Series</li>
               <li>Helsreach Series</li>
@@ -94,8 +91,7 @@ export default function Page() {
           </div>
 
           <div className="flex-1 rounded-md border border-[var(--cream-border)] bg-[var(--cream-surface)] p-3 dark:border-gray-700 dark:bg-gray-800/50">
-            <h3 className="font-medium text-stone-900 dark:text-gray-100">🎮 Gaming</h3>
-            <p className="text-sm text-stone-600 dark:text-gray-400">I've played games since I was a child, absolute best way to unwind.</p>
+            <h3 className="font-medium text-stone-900 dark:text-gray-100">🎮 fav games</h3>
             <ul className="mt-2 list-inside list-disc text-sm text-stone-600 dark:text-gray-400">
               <li>Total War: Warhammer I-III</li>
               <li>Marvel Rivals</li>
