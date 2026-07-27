@@ -1,4 +1,4 @@
-import { BlogPosts } from "app/components/posts";
+import { Photos } from "app/components/photos";
 import { Typewriter } from "nextjs-simple-typewriter";
 import { projects } from "./projects/project-info/projects";
 import Link from "next/link";
@@ -51,9 +51,9 @@ export default function Page() {
 
         <div className="relative rounded-lg border border-[var(--cream-border)] p-4 dark:border-gray-700">
           <div className="absolute -top-4 left-4 bg-[var(--cream-bg)] px-2 text-lg text-[var(--text-fg)] dark:bg-zinc-900 dark:text-cyan-200">
-            📜blogs
+            📷photos
           </div>
-          <BlogPosts />
+          <Photos limit={6} />
         </div>
       </div>
 
